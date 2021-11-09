@@ -4,15 +4,157 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F57c00"
     tools:context=".MainActivity">
-
-    <TextView
+	
+	<ImageView
+		android:id="@+id/imageView7"
+		android:layout_width="196dp"
+		android:layout_height="313dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.451"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.078"
+		app:srcCompat="@drawable/logo" />
+	
+	<ImageView
+		android:id="@+id/imageView19"
+		android:layout_width="0dp"
+		android:layout_height="471dp"
+		android:layout_marginBottom="4dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:srcCompat="@drawable/blanco940x788" />
+	
+	<EditText
+		android:id="@+id/txt_email"
+		android:layout_width="311dp"
+		android:layout_height="55dp"
+		android:background="@drawable/border_correo"
+		android:drawableStart="@drawable/ic_email"
+		android:drawablePadding="12dp"
+		android:ems="10"
+		android:hint="Correo Electrónico"
+		android:inputType="textEmailAddress"
+		android:selectAllOnFocus="true"
+		android:singleLine="true"
+		android:soundEffectsEnabled="false"
+		android:textColor="@color/black"
+		android:textColorHint="@color/darker_gray"
+		android:textSize="24sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/txt_password"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.487"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView3"
+		app:layout_constraintVertical_bias="0.722"
+		tools:visibility="visible" />
+	
+	<EditText
+		android:id="@+id/txt_password"
+		android:layout_width="310dp"
+		android:layout_height="52dp"
+		android:layout_marginBottom="20dp"
+		android:background="@drawable/border_correo"
+		android:drawableStart="@drawable/ic_lock"
+		android:drawablePadding="12dp"
+		android:ems="10"
+		android:hint="Contraseña"
+		android:inputType="textPassword"
+		android:selectAllOnFocus="true"
+		android:singleLine="true"
+		android:textColorHint="@color/darker_gray"
+		android:textSize="24sp"
+		
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/button_ingresar"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.481"
+		app:layout_constraintStart_toStartOf="parent"
+		tools:visibility="visible" />
+	
+	<TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-black"
+        android:text="WoofPet's"
+        android:textSize="48sp"
+		android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+	
+	<TextView
+		android:id="@+id/textView3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="204dp"
+		android:text="Inicio de Sesión"
+		android:textColor="#0E0E0E"
+		android:textSize="24sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView"
+		app:layout_constraintVertical_bias="0.0" />
+	
+	<Button
+		android:id="@+id/button_ingresar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="4dp"
+		android:background="@drawable/border_correo"
+		android:text="INGRESAR"
+		android:textSize="24sp"
+		app:backgroundTint="#F57C00"
+		app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.484"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView3"
+		app:layout_constraintVertical_bias="0.476" />
+	
+	<Button
+		android:id="@+id/button_registro"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:background="#FFFFFF"
+		android:text="Desea Registrase?"
+		android:textColor="@color/black"
+		android:textStyle="bold"
+		app:backgroundTint="#FFFFFF"
+		app:iconTint="#FFFFFF"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/button_ingresar" />
+	
+	<Button
+		android:id="@+id/button_olvido"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:background="#FFFFFF"
+		android:text="Olvidaste tu Contraseña?"
+		android:textColor="@color/black"
+		android:textStyle="bold"
+		app:backgroundTint="#FFFFFF"
+		app:iconTint="#FFFFFF"
+		app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/button_registro"
+		app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
