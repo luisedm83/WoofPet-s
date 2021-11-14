@@ -6,19 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.woofpets.R;
-
-public class MainActivity extends AppCompatActivity {
+public class MenuPrincipal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_menu_principal);
     }
 
-    //Método el botón
-    public void Ingresar(View view){
-        Intent ingresar = new Intent(this, MenuPrincipal.class);
-        startActivity(ingresar);
+    //Botón regreso
+    public void Anterior(View view){
+        Intent anterior = new Intent(this, MainActivity.class);
+        startActivity(anterior);
     }
 }

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">WoofPets</string>
+    <string name="txt_woofpets_String">WoofPets</string>
+    <string name="txt_inicio_string">Inicio de Sesión</string>
+    <string name="txt_email_String">Correo Electrónico</string>
+    <string name="txt_password_String"> Contraseña</string>
+    <string name="button_ingresar_String">INGRESAR</string>
+    <string name="button_registro_String">DESEA REGISTRARSE?</string>
+    <string name="button_olvido_String">OLVIDO SU CONTRASEÑA?</string>
+    <string name="imagen">imagen</string>
+    <string name="txt_woofpets_mini_String">WoofPets</string>
+    <string name="button_prueba">DEVOLVER?</string>
+    <string name="layout1">layout1?</string>
 </resources>

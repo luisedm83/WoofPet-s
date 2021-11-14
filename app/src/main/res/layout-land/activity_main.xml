@@ -9,60 +9,33 @@
 	
 	<ImageView
 		android:id="@+id/View_logo1"
-		android:layout_width="196dp"
-		android:layout_height="313dp"
+		android:layout_width="177dp"
+		android:layout_height="277dp"
 		android:contentDescription="@string/imagen"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.451"
+		app:layout_constraintHorizontal_bias="0.081"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.078"
+		app:layout_constraintVertical_bias="1.0"
 		app:srcCompat="@drawable/pyg1" />
-	
-	<ImageView
-		android:id="@+id/View_blanco"
-		android:layout_width="0dp"
-		android:layout_height="471dp"
-		android:layout_marginBottom="4dp"
-		android:contentDescription="@string/imagen"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.0"
-		app:layout_constraintStart_toStartOf="parent"
-		app:srcCompat="@drawable/blanco940x788"
-		tools:ignore="ImageContrastCheck" />
 	
 	<TextView
 		android:id="@+id/txt_woofpets"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="44dp"
 		android:fontFamily="sans-serif-black"
 		android:text="@string/txt_woofpets_String"
 		android:textSize="48sp"
 		android:textStyle="bold"
+		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.497"
+		app:layout_constraintHorizontal_bias="0.084"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
-	
-	<TextView
-		android:id="@+id/txt_inicio"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="204dp"
-		android:text="@string/txt_inicio_string"
-		android:textColor="#212121"
-		android:textSize="34sp"
-		android:textStyle="bold"
-		app:layout_constraintBottom_toBottomOf="@+id/View_blanco"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/txt_woofpets"
-		app:layout_constraintVertical_bias="0.0" />
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.074" />
 	
 	<!--android:background="@drawable/border_correo"-->
 	
@@ -70,13 +43,43 @@
 	android:textStyle="bold"
 		app:iconTint="#FFFFFF"-->
 	
+	<ImageView
+		android:id="@+id/View_blanco"
+		android:layout_width="541dp"
+		android:layout_height="533dp"
+		android:contentDescription="@string/imagen"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.863"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.024"
+		app:srcCompat="@drawable/blanco940x788"
+		tools:ignore="ImageContrastCheck" />
+	
+	<TextView
+		android:id="@+id/txt_inicio"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/txt_inicio_string"
+		android:textColor="#212121"
+		android:textSize="34sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toBottomOf="@+id/View_blanco"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.713"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.032" />
+	
 	<LinearLayout
 		android:id="@+id/layout1"
-		android:layout_width="291dp"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="368dp"
+		android:layout_width="322dp"
+		android:layout_height="191dp"
+		android:layout_marginTop="36dp"
 		android:orientation="vertical"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.74"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent">
 		
@@ -105,7 +108,6 @@
 			android:id="@+id/txt_password"
 			android:layout_width="match_parent"
 			android:layout_height="55dp"
-			android:layout_marginTop="25dp"
 			android:background="@drawable/border_correo"
 			android:drawableStart="@drawable/ic_lock"
 			android:drawablePadding="12dp"
@@ -123,7 +125,6 @@
 			android:id="@+id/button_ingresar"
 			android:layout_width="match_parent"
 			android:layout_height="55dp"
-			android:layout_marginTop="20dp"
 			android:onClick="Ingresar"
 			android:text="@string/button_ingresar_String"
 			android:textSize="24sp"
@@ -135,12 +136,13 @@
 	<LinearLayout
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:orientation="vertical"
+		android:orientation="horizontal"
 		app:layout_constraintBottom_toBottomOf="@+id/View_blanco"
 		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.763"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/layout1"
-		app:layout_constraintVertical_bias="0.391">
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.501">
 		
 		<Button
 			android:id="@+id/button_registro"
@@ -158,7 +160,7 @@
 			android:id="@+id/button_olvido"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="20dp"
+			
 			android:bottomLeftRadius="10dp"
 			android:bottomRightRadius="10dp"
 			android:radius="10dp"
@@ -166,6 +168,8 @@
 			android:textColor="@color/black"
 			android:topRightRadius="10dp"
 			app:backgroundTint="#FFFFFF" />
+		
+		<!--android:layout_marginTop="10dp"-->
 	</LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
