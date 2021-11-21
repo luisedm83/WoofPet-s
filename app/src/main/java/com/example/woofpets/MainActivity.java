@@ -11,12 +11,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.woofpets.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         txt_email = findViewById(R.id.txt_email);
         txt_password = findViewById(R.id.txt_password);
-        button_ingresar = findViewById(R.id.button_ingresar);
+        button_ingresar = findViewById(R.id.button_enviar_String);
         button_registro = findViewById(R.id.button_registro);
         button_olvido = findViewById(R.id.button_olvido);
 
@@ -46,6 +44,15 @@ public class MainActivity extends AppCompatActivity {
         });
         button_registro.setOnClickListener(view ->{
             startActivity(new Intent(MainActivity.this, Registro.class));
+        });
+        button_olvido.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(MainActivity.this, RecuperarPassword.class);
+                startActivity(intent);
+                finish();
+
+            }
         });
     }
 
@@ -73,6 +80,5 @@ public class MainActivity extends AppCompatActivity {
             });
         }
     }
-
 
 }

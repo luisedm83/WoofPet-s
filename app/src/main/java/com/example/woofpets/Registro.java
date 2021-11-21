@@ -24,6 +24,7 @@ public class Registro extends AppCompatActivity {
     TextView txt_email_String;
     TextView txt_password_String;
     TextView login_return;
+    TextView txt_olvido_return;
     Button button_registrar_string;
 
     FirebaseAuth mAuth;
@@ -32,16 +33,12 @@ public class Registro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
-    //}
-    //Botón regreso
-   // public void Anterior(View view){
-       // Intent anterior = new Intent(this, MainActivity.class);
-      //  startActivity(anterior);
 
         txt_email_String = findViewById(R.id.txt_email_String);
         txt_password_String = findViewById(R.id.txt_password_String);
         login_return = findViewById(R.id.login_return);
         button_registrar_string = findViewById(R.id.button_registrar_string);
+        txt_olvido_return = findViewById(R.id.txt_olvido_return);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -51,6 +48,16 @@ public class Registro extends AppCompatActivity {
 
         login_return.setOnClickListener(view ->{
             startActivity(new Intent(Registro.this, MainActivity.class));
+        });
+
+        txt_olvido_return.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(Registro.this, RecuperarPassword.class);
+                startActivity(intent);
+                finish();
+
+            }
         });
     }
     private void createUser(){

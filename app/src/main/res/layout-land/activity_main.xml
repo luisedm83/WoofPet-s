@@ -58,7 +58,7 @@
 		tools:ignore="ImageContrastCheck" />
 	
 	<TextView
-		android:id="@+id/txt_inicio"
+		android:id="@+id/txt_recuperar_pass_string"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="@string/txt_inicio_string"
@@ -122,7 +122,7 @@
 			tools:ignore="TextContrastCheck" />
 		
 		<Button
-			android:id="@+id/button_ingresar"
+			android:id="@+id/button_enviar_String"
 			android:layout_width="match_parent"
 			android:layout_height="55dp"
 			android:onClick="Ingresar"
