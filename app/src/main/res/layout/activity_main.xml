@@ -1,100 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F57c00"
+	android:orientation="vertical"
     tools:context=".MainActivity">
 	
-	<ImageView
-		android:id="@+id/View_logo1"
-		android:layout_width="196dp"
-		android:layout_height="313dp"
-		android:contentDescription="@string/imagen"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.451"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.078"
-		app:srcCompat="@drawable/pyg1" />
-	
-	<ImageView
-		android:id="@+id/View_blanco"
-		android:layout_width="0dp"
-		android:layout_height="471dp"
-		android:layout_marginBottom="4dp"
-		android:contentDescription="@string/imagen"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.0"
-		app:layout_constraintStart_toStartOf="parent"
-		app:srcCompat="@drawable/blanco940x788"
-		tools:ignore="ImageContrastCheck" />
-	
-	<TextView
-		android:id="@+id/txt_woofpets"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="44dp"
-		android:fontFamily="sans-serif-black"
-		android:text="@string/txt_woofpets_String"
-		android:textSize="48sp"
-		android:textStyle="bold"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.497"
-		app:layout_constraintLeft_toLeftOf="parent"
-		app:layout_constraintRight_toRightOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
-	
-	<TextView
-		android:id="@+id/txt_inicio"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="204dp"
-		android:text="@string/txt_inicio_string"
-		android:textColor="#212121"
-		android:textSize="34sp"
-		android:textStyle="bold"
-		app:layout_constraintBottom_toBottomOf="@+id/View_blanco"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/txt_woofpets"
-		app:layout_constraintVertical_bias="0.0" />
-	
-	<!--android:background="@drawable/border_correo"-->
-	
-	<!--android:background="#FFFFFF"
-	android:textStyle="bold"
-		app:iconTint="#FFFFFF"-->
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="243dp">
+		
+		<TextView
+			android:id="@+id/txt_woofpets"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="10dp"
+			android:fontFamily="sans-serif-black"
+			android:gravity="center"
+			android:text="@string/txt_woofpets_String"
+			android:textSize="48sp"
+			android:textStyle="bold" />
+		
+		<ImageView
+			android:id="@+id/View_logo1"
+			android:layout_width="188dp"
+			android:layout_height="304dp"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="10dp"
+			android:contentDescription="@string/imagen"
+			app:srcCompat="@drawable/pyg1" />
+	</FrameLayout>
 	
 	<LinearLayout
-		android:id="@+id/layout1"
-		android:layout_width="291dp"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="368dp"
-		android:orientation="vertical"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent">
+		android:layout_width="match_parent"
+		android:layout_height="585dp"
+		android:background="#FFFFFF"
+		android:orientation="vertical">
+		
+		<TextView
+			android:id="@+id/txt_inicio"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:text="@string/txt_inicio_string"
+			android:textColor="#212121"
+			android:textSize="34sp"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toBottomOf="@+id/View_blanco"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/txt_woofpets"
+			app:layout_constraintVertical_bias="0.0" />
 		
 		<EditText
 			android:id="@+id/txt_email"
-			android:layout_width="match_parent"
+			android:layout_width="300dp"
 			android:layout_height="55dp"
+			android:layout_gravity="center"
 			android:layout_marginTop="28dp"
 			android:background="@drawable/border_correo"
 			android:drawableStart="@drawable/ic_email"
 			android:drawablePadding="12dp"
-			android:ems="10"
 			android:hint="@string/txt_email_String"
 			android:importantForAutofill="no"
 			android:inputType="textEmailAddress"
 			android:selectAllOnFocus="true"
 			android:singleLine="true"
-			android:soundEffectsEnabled="false"
 			android:textColor="@color/black"
 			android:textColorHint="@color/darker_gray"
 			android:textSize="20sp"
@@ -103,13 +81,14 @@
 		
 		<EditText
 			android:id="@+id/txt_password"
-			android:layout_width="match_parent"
+			android:layout_width="300dp"
 			android:layout_height="55dp"
+			android:layout_gravity="center"
 			android:layout_marginTop="25dp"
 			android:background="@drawable/border_correo"
 			android:drawableStart="@drawable/ic_lock"
-			android:drawablePadding="12dp"
-			android:ems="10"
+			android:drawablePadding="0dp"
+			
 			android:hint="@string/txt_password_String"
 			android:importantForAutofill="no"
 			android:inputType="textPassword"
@@ -121,31 +100,20 @@
 		
 		<Button
 			android:id="@+id/button_ingresar"
-			android:layout_width="match_parent"
+			android:layout_width="300dp"
 			android:layout_height="55dp"
+			android:layout_gravity="center"
 			android:layout_marginTop="20dp"
-			android:onClick="Ingresar"
 			android:text="@string/button_ingresar_String"
 			android:textSize="24sp"
 			app:backgroundTint="#F57C00"
 			tools:ignore="TextContrastCheck" />
-	
-	</LinearLayout>
-	
-	<LinearLayout
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:orientation="vertical"
-		app:layout_constraintBottom_toBottomOf="@+id/View_blanco"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/layout1"
-		app:layout_constraintVertical_bias="0.391">
 		
 		<Button
 			android:id="@+id/button_registro"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
+			android:layout_width="300dp"
+			android:layout_height="55dp"
+			android:layout_gravity="center"
 			android:bottomLeftRadius="10dp"
 			android:bottomRightRadius="10dp"
 			android:radius="10dp"
@@ -156,9 +124,10 @@
 		
 		<Button
 			android:id="@+id/button_olvido"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="20dp"
+			android:layout_width="300dp"
+			android:layout_height="55dp"
+			android:layout_gravity="center"
+			android:layout_marginTop="10dp"
 			android:bottomLeftRadius="10dp"
 			android:bottomRightRadius="10dp"
 			android:radius="10dp"
@@ -166,6 +135,13 @@
 			android:textColor="@color/black"
 			android:topRightRadius="10dp"
 			app:backgroundTint="#FFFFFF" />
+	
 	</LinearLayout>
+	
+	<!--android:background="@drawable/border_correo"-->
+	
+	<!--android:background="#FFFFFF"
+	android:textStyle="bold"
+		app:iconTint="#FFFFFF"-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

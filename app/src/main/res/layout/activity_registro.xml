@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#F57c00"
+	android:orientation="vertical"
+	tools:context=".Registro">
+	
+	<LinearLayout
+		android:layout_width="217dp"
+		android:layout_height="49dp"
+		android:layout_gravity="end"
+		android:orientation="horizontal">
+		
+		<ImageView
+			android:id="@+id/imagen_registro_logo_mini"
+			android:layout_width="66dp"
+			android:layout_height="49dp"
+			android:layout_gravity="left"
+			android:layout_marginTop="1dp"
+			android:contentDescription="@string/imagen_registro_logo_mini"
+			app:srcCompat="@drawable/pyg1" />
+		
+		<TextView
+			android:id="@+id/txt_woofpets_mini_String"
+			android:layout_width="152dp"
+			android:layout_height="49dp"
+			android:layout_gravity="end"
+			android:gravity="center"
+			android:fontFamily="sans-serif-black"
+			android:text="@string/txt_woofpets_mini_String"
+			android:textSize="30sp"
+			android:textStyle="bold" />
+	
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="152dp"
+		android:background="#ff9800"
+		android:gravity="center"
+		android:orientation="horizontal">
+		
+		<ImageView
+			android:id="@+id/imagen_registro"
+			android:layout_width="149dp"
+			android:layout_height="117dp"
+			android:contentDescription="@string/imagen_registro"
+			android:gravity="center"
+			app:srcCompat="@drawable/ic_user"
+			tools:ignore="VectorDrawableCompat" />
+		
+		<TextView
+			android:id="@+id/txt_registro_string"
+			android:layout_width="193dp"
+			android:layout_height="149dp"
+			android:gravity="center"
+			android:text="@string/txt_registro_string"
+			android:textSize="30sp"
+			android:textStyle="bold"
+			android:textColor="@color/black"/>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:orientation="vertical">
+		
+		<EditText
+			android:id="@+id/txt_email_String"
+			android:layout_width="300dp"
+			android:layout_height="55dp"
+			android:layout_gravity="center"
+			android:layout_marginTop="30dp"
+			android:background="@drawable/border_correo"
+			android:drawableStart="@drawable/ic_email"
+			android:drawablePadding="12dp"
+			android:hint="@string/txt_email_String"
+			android:textColor="@color/black"
+			android:textColorHint="@color/darker_gray"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			tools:ignore="TextContrastCheck" />
+		
+		<EditText
+			android:id="@+id/txt_password_String"
+			android:layout_width="300dp"
+			android:layout_height="55dp"
+			android:layout_gravity="center"
+			android:layout_marginTop="20dp"
+			android:background="@drawable/border_correo"
+			android:drawableStart="@drawable/ic_lock"
+			android:drawablePadding="12dp"
+			android:hint="@string/txt_password_String"
+			android:inputType="textPassword"
+			android:textColorHint="@color/darker_gray"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			tools:ignore="TextContrastCheck"
+			android:textColor="@color/black"/>
+		
+		<Button
+			android:id="@+id/button_registrar_string"
+			android:layout_width="300dp"
+			android:layout_height="55dp"
+			android:layout_gravity="center"
+			android:layout_marginTop="20dp"
+			android:text="@string/button_registrar_string"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			app:backgroundTint="#F57C00"
+			tools:ignore="TextContrastCheck" />
+		
+		<TextView
+			android:id="@+id/login_return"
+			android:layout_width="300dp"
+			android:layout_height="30dp"
+			android:layout_gravity="center"
+			android:layout_marginTop="20dp"
+			android:gravity="center"
+			android:text="@string/login_return"
+			android:textColor="@color/black"
+			
+			android:textSize="20sp"
+			android:textStyle="bold" />
+		
+		<TextView
+			android:id="@+id/txt_olvido_return"
+			android:layout_width="300dp"
+			android:layout_height="30dp"
+			android:layout_gravity="center"
+			android:layout_marginTop="20dp"
+			android:gravity="center"
+			android:text="@string/txt_olvido_return"
+			android:textColor="@color/black"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+	
+	</LinearLayout>
+
+</LinearLayout>

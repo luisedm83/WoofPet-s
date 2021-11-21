@@ -9,8 +9,11 @@
         <entry key="..\:/Users/Luis Dominguez/OneDrive - XOREX DE COLOMBIA SAS/Escritorio/Mintic/CICLO 4/Repositorio/WoofPet-s/app/src/main/res/drawable/ic_email.xml" value="0.18552631578947368" />
         <entry key="..\:/Users/Luis Dominguez/OneDrive - XOREX DE COLOMBIA SAS/Escritorio/Mintic/CICLO 4/Repositorio/WoofPet-s/app/src/main/res/drawable/ic_lock.xml" value="0.18311688311688312" />
         <entry key="..\:/Users/Luis Dominguez/OneDrive - XOREX DE COLOMBIA SAS/Escritorio/Mintic/CICLO 4/Repositorio/WoofPet-s/app/src/main/res/layout-land/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/Luis Dominguez/OneDrive - XOREX DE COLOMBIA SAS/Escritorio/Mintic/CICLO 4/Repositorio/WoofPet-s/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Luis Dominguez/OneDrive - XOREX DE COLOMBIA SAS/Escritorio/Mintic/CICLO 4/Repositorio/WoofPet-s/app/src/main/res/layout/activity_menu_principal.xml" value="0.25" />
+        <entry key="..\:/Users/Luis Dominguez/OneDrive - XOREX DE COLOMBIA SAS/Escritorio/Mintic/CICLO 4/Repositorio/WoofPet-s/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Luis Dominguez/OneDrive - XOREX DE COLOMBIA SAS/Escritorio/Mintic/CICLO 4/Repositorio/WoofPet-s/app/src/main/res/layout/activity_menu_principal.xml" value="0.22" />
+        <entry key="..\:/Users/Luis Dominguez/OneDrive - XOREX DE COLOMBIA SAS/Escritorio/Mintic/CICLO 4/Repositorio/WoofPet-s/app/src/main/res/layout/activity_registro.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/Luis Dominguez/OneDrive - XOREX DE COLOMBIA SAS/Escritorio/Mintic/CICLO 4/Repositorio/WoofPet-s/app/src/main/res/menu/menu.xml" value="0.22" />
+        <entry key="..\:/Users/Luis Dominguez/OneDrive - XOREX DE COLOMBIA SAS/Escritorio/Mintic/CICLO 4/Repositorio/WoofPet-s/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15052083333333333" />
       </map>
     </option>
   </component>
@@ -19,5 +22,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
   </component>
 </project>

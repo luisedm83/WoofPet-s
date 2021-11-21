@@ -1,4 +1,5 @@
 <resources>
+    //Main_Login
     <string name="app_name">WoofPets</string>
     <string name="txt_woofpets_String">WoofPets</string>
     <string name="txt_inicio_string">Inicio de Sesión</string>
@@ -10,5 +11,18 @@
     <string name="imagen">imagen</string>
     <string name="txt_woofpets_mini_String">WoofPets</string>
     <string name="button_prueba">DEVOLVER?</string>
-    <string name="layout1">layout1?</string>
+    <string name="txt_olvido_return">Olvido su Contraseña?</string>
+    //Registro
+    <string name="txt_registro_string">Registro de Usuario</string>
+    <string name="button_registrar_string">REGISTRAR</string>
+    <string name="imagen_registro">imagen_user</string>
+    <string name="imagen_registro_logo_mini">imagen_logo</string>
+    <string name="login_return">Login?</string>
+    //MenuPrincipal
+    <string name="txt_menu_ppal">Menú Principal</string>
+    <string name="button_mppal_registro_mascotas">Registro Mascotas</string>
+    <string name="button_mppal_mis_mascotas">Mis Mascotas</string>
+    <string name="button_mppal_ubicar_veterinarias">Ubicar Veterinarias</string>
+    <string name="button_cerrar_sesion">Cerrar Sesión</string>
+    
 </resources>

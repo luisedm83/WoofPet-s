@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "550269241714",
+    "project_id": "woofpets-48eb6",
+    "storage_bucket": "woofpets-48eb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550269241714:android:ed183bcc81ed99914a75eb",
+        "android_client_info": {
+          "package_name": "com.example.woofpets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550269241714-adsj1tcmekpnqltj0ds7pg9601uf7a1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_Wr38HjvCIAs4G0WqwaOqJLwzmPnypOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550269241714-adsj1tcmekpnqltj0ds7pg9601uf7a1v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
