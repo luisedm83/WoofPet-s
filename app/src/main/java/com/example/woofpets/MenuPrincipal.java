@@ -31,6 +31,11 @@ public class MenuPrincipal extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
+
+        button_mppal_registro_mascotas.setOnClickListener(view ->{
+            startActivity(new Intent(MenuPrincipal.this, RegistroMascotas.class));
+        });
+
         button_cerrar_sesion.setOnClickListener(view -> {
             mAuth.signOut();
             startActivity(new Intent(MenuPrincipal.this, MainActivity.class));
