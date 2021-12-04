@@ -87,8 +87,7 @@
 			android:layout_marginTop="25dp"
 			android:background="@drawable/border_correo"
 			android:drawableStart="@drawable/ic_lock"
-			android:drawablePadding="0dp"
-			
+			android:drawablePadding="12dp"
 			android:hint="@string/txt_password_String"
 			android:importantForAutofill="no"
 			android:inputType="textPassword"

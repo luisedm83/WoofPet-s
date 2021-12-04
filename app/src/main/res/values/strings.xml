@@ -1,34 +1,50 @@
 <resources>
-	//Main_Login
-	<string name="app_name">WoofPets</string>
-	<string name="txt_woofpets_String">WoofPets</string>
-	<string name="txt_inicio_string">Inicio de Sesión</string>
-	<string name="txt_email_String">Correo Electrónico</string>
-	<string name="txt_password_String"> Contraseña</string>
-	<string name="button_ingresar_String">INGRESAR</string>
-	<string name="button_registro_String">DESEA REGISTRARSE?</string>
-	<string name="button_olvido_String">OLVIDO SU CONTRASEÑA?</string>
-	<string name="imagen">imagen</string>
-	<string name="txt_woofpets_mini_String">WoofPets</string>
-	<string name="button_prueba">DEVOLVER?</string>
-	//Registro
-	<string name="txt_registro_string">Registro de Usuario</string>
-	<string name="button_registrar_string">REGISTRAR</string>
-	<string name="imagen_registro">imagen_user</string>
-	<string name="imagen_registro_logo_mini">imagen_logo</string>
-	<string name="login_return">Login?</string>
-	<string name="txt_olvido_return">Olvido su Contraseña?</string>
-	//MenuPrincipal
-	<string name="txt_menu_ppal">Menú Principal</string>
-	<string name="button_mppal_registro_mascotas">Registro Mascotas</string>
-	<string name="button_mppal_mis_mascotas">Mis Mascotas</string>
-	<string name="button_mppal_ubicar_veterinarias">Ubicar Veterinarias</string>
-	<string name="button_cerrar_sesion">Cerrar Sesión</string>
-	//RecuperarPassword
-	<string name="txt_recuperar_pass_string">Olvido su Password?</string>
-	<string name="txt_digite">Digite su Correo y Enviar</string>
-	<string name="button_enviar_String">ENVIAR</string>
-	<string name="login_recuperar">Login?</string>
-	<string name="registro_recuperar">Registrar?</string>
-	
+    //Main_Login
+    <string name="app_name">WoofPets</string>
+    <string name="txt_woofpets_String">WoofPets</string>
+    <string name="txt_inicio_string">Inicio de Sesión</string>
+    <string name="txt_email_String">Correo Electrónico</string>
+    <string name="txt_password_String"> Contraseña</string>
+    <string name="button_ingresar_String">INGRESAR</string>
+    <string name="button_registro_String">DESEA REGISTRARSE</string>
+    <string name="button_olvido_String">OLVIDO SU CONTRASEÑA</string>
+    <string name="imagen">imagen</string>
+    <string name="txt_woofpets_mini_String">WoofPets</string>
+    <string name="button_prueba">DEVOLVER?</string>
+    //Registro
+    <string name="txt_registro_string">Registro de Usuario</string>
+    <string name="button_registrar_string">REGISTRAR</string>
+    <string name="imagen_registro">imagen_user</string>
+    <string name="imagen_registro_logo">imagen_logo</string>
+    <string name="login_return">Login</string>
+    <string name="txt_olvido_return">Olvido su Contraseña</string>
+    //MenuPrincipal
+    <string name="txt_menu_ppal">Menú Principal</string>
+    <string name="button_mppal_registro_mascotas">Registro Mascotas</string>
+    <string name="button_mppal_mis_mascotas">Mis Mascotas</string>
+    <string name="button_mppal_ubicar_veterinarias">Ubicar Veterinarias</string>
+    <string name="button_cerrar_sesion">Cerrar Sesión</string>
+
+    //RecuperarPassword
+    <string name="txt_recuperar_pass_string">Olvido su Password?</string>
+    <string name="txt_digite">Digite su Correo y Enviar</string>
+    <string name="button_enviar_String">ENVIAR</string>
+    <string name="login_recuperar">Login</string>
+    <string name="registro_recuperar">Desea Registrarse</string>
+
+    //Registro de mascotas
+    <string name="txt_registropets_string">Registro de Mascotas</string>
+    <string name="imagen_registropets">imagen_pets</string>
+    <string name="txt_nombrepet">Digite nombre de la mascota</string>
+    <string name="txt_fecha">Digite fecha de nacimiento</string>
+    <string name="txt_raza">Digite la raza</string>
+    <string name="txt_tipo">Digite el tipo (Perro, gato...)</string>
+    <string name="txt_sexo">Digite el sexo</string>
+    <string name="button_registrar_pets">REGISTRAR MASCOTA</string>
+    <string name="button_foto">TOMAR FOTO</string>
+    <string name="view_foto">VER FOTO</string>
+    <string name="button_Subir_foto">Subir Foto</string>
+
+
+
 </resources>

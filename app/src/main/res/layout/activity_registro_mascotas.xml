@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F57c00"
+    android:orientation="vertical"
+    tools:context=".RegistroMascotas">
+
+    <LinearLayout
+        android:layout_width="217dp"
+        android:layout_height="49dp"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:background="#F57c00">
+
+        <ImageView
+            android:id="@+id/imagen_registro_logo"
+            android:layout_width="66dp"
+            android:layout_height="49dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="1dp"
+            app:srcCompat="@drawable/pyg1" />
+
+        <TextView
+            android:id="@+id/txt_woofpets_mini_String"
+            android:layout_width="152dp"
+            android:layout_height="49dp"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/txt_woofpets_mini_String"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:background="#ff9800"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imagen_registropets"
+            android:layout_width="149dp"
+            android:layout_height="117dp"
+            android:contentDescription="@string/imagen_registropets"
+            android:gravity="center"
+            app:srcCompat="@drawable/ic_pets"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/txt_registropets_string"
+            android:layout_width="193dp"
+            android:layout_height="149dp"
+            android:gravity="center"
+            android:text="@string/txt_registropets_string"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="387dp"
+        android:layout_height="520dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/button_foto"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="?android:attr/colorPressedHighlight"
+                android:contentDescription="@string/button_foto"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_camera" />
+
+            <ImageView
+                android:id="@+id/view_foto"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:contentDescription="@string/view_foto"
+                app:srcCompat="@drawable/ic_image" />
+        </LinearLayout>
+-->
+
+        <EditText
+            android:id="@+id/txt_nombrepet"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_correo"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_nombrepet"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/txt_fecha"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_correo"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_fecha"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/txt_raza"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_correo"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_raza"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/txt_tipo"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_correo"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_tipo"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/txt_sexo"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_correo"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:hint="@string/txt_sexo"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/button_Subir_foto"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:radius="10dp"
+            android:text="@string/button_Subir_foto"
+            android:textColor="@color/black"
+            android:topRightRadius="10dp"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="#FFFFFF"
+
+            />
+
+        <Button
+            android:id="@+id/button_registrar_pets"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/button_registrar_pets"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#F57C00"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+</LinearLayout>

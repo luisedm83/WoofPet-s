@@ -41,6 +41,21 @@ public class RecuperarPassword extends AppCompatActivity {
                 validate();
             }
         });
+
+        login_recuperar.setOnClickListener(view ->{
+            startActivity(new Intent(RecuperarPassword.this, MainActivity.class));
+        });
+
+        registro_recuperar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(RecuperarPassword.this, Registro.class);
+                startActivity(intent);
+                finish();
+
+            }
+        });
+
     }
 
     public void validate(){

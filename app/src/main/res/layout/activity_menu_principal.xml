@@ -14,14 +14,14 @@
 		android:layout_height="49dp"
 		android:layout_gravity="end"
 		android:orientation="horizontal">
-		
+
 		<ImageView
-			android:id="@+id/imagen_registro_logo_mini"
+			android:id="@+id/imagen_registro_logo"
 			android:layout_width="66dp"
 			android:layout_height="49dp"
 			android:layout_gravity="left"
 			android:layout_marginTop="1dp"
-			android:contentDescription="@string/imagen_registro_logo_mini"
+			android:contentDescription="@string/imagen_registro_logo"
 			app:srcCompat="@drawable/pyg1" />
 		
 		<TextView
