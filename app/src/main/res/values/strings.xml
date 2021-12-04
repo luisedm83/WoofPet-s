@@ -36,7 +36,7 @@
     <string name="txt_registropets_string">Registro de Mascotas</string>
     <string name="imagen_registropets">imagen_pets</string>
     <string name="txt_nombrepet">Digite nombre de la mascota</string>
-    <string name="txt_fecha">Digite fecha de nacimiento</string>
+    <string name="txt_fecha">Fecha Nac. dd/mm/aa</string>
     <string name="txt_raza">Digite la raza</string>
     <string name="txt_tipo">Digite el tipo (Perro, gato...)</string>
     <string name="txt_sexo">Digite el sexo</string>
