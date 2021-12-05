@@ -56,6 +56,7 @@ public class RegistroMascotas extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference();
+        mStorage = FirebaseStorage.getInstance().getReference();
 
         txt_nombrepet = (EditText) findViewById(R.id.txt_nombrepet);
         txt_fecha = (EditText) findViewById(R.id.txt_fecha);
@@ -104,8 +105,8 @@ public class RegistroMascotas extends AppCompatActivity {
         });
 
         //ABRIR ALMACENAMIENTO DE FOTOS
-        mStorage = FirebaseStorage.getInstance().getReference();
-        button_Subir_foto = (Button) findViewById(R.id.button_Subir_foto);
+        //mStorage = FirebaseStorage.getInstance().getReference();
+        //button_Subir_foto = (Button) findViewById(R.id.button_Subir_foto);
         button_Subir_foto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -114,15 +115,28 @@ public class RegistroMascotas extends AppCompatActivity {
                 startActivityForResult(intent, GALLERY_INTENT);
             }
         });
+
+
     }
 
     //CARGAR FOTO A FIREBASE
-/*    @Override
+    //LINEA NUEVA
+    //String id = mAuth.getCurrentUser().getUid();
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
+
+
         if(requestCode == GALLERY_INTENT && resultCode == RESULT_OK){
             Uri uri = data.getData();
-            StorageReference filePath = mStorage.child("fotos").child(uri.getLastPathSegment());
+            //DOS LINEAS NUEVAS
+            String id = mAuth.getCurrentUser().getUid();
+            nombrepet = txt_nombrepet.getText().toString();
+        //    StorageReference filePath = mStorage.child("Users").child(id).child(nombrepet).child(uri.getLastPathSegment());
+            StorageReference filePath = mStorage.child("Users").child(id).child(nombrepet).child(uri.getLastPathSegment());
+        //    StorageReference filePath = mStorage.child("fotos").child(uri.getLastPathSegment());
             filePath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
@@ -130,6 +144,6 @@ public class RegistroMascotas extends AppCompatActivity {
                 }
             });
         }
-    }*/
+    }
 
 }
