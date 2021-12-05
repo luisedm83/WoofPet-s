@@ -45,9 +45,9 @@ public class RegistroMascotas extends AppCompatActivity {
     FirebaseAuth mAuth;
     DatabaseReference mDatabase;
 
-    //ESTAS LINEAS HACEN PARTE DEL CARGUE DE IMAGENES
-    //StorageReference mStorage;
-    //static final int GALLERY_INTENT = 1;
+    //ESTAS DOS LINEAS HACEN PARTE DEL CARGUE DE IMAGENES
+    StorageReference mStorage;
+    static final int GALLERY_INTENT = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,7 +83,7 @@ public class RegistroMascotas extends AppCompatActivity {
                     map.put("sexo", sexo);
 
                     String id = mAuth.getCurrentUser().getUid();
-                    mDatabase.child("Users").child(id).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    mDatabase.child("Users").child(id).child(nombrepet).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){
@@ -103,9 +103,8 @@ public class RegistroMascotas extends AppCompatActivity {
             }
         });
 
-
         //ABRIR ALMACENAMIENTO DE FOTOS
-        /*mStorage = FirebaseStorage.getInstance().getReference();
+        mStorage = FirebaseStorage.getInstance().getReference();
         button_Subir_foto = (Button) findViewById(R.id.button_Subir_foto);
         button_Subir_foto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,7 +113,7 @@ public class RegistroMascotas extends AppCompatActivity {
                 intent.setType("image/*");
                 startActivityForResult(intent, GALLERY_INTENT);
             }
-        });*/
+        });
     }
 
     //CARGAR FOTO A FIREBASE
